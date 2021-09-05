@@ -47,15 +47,15 @@
             <div class="control">
               <input class="input is-small" type="text" placeholder="Host" v-model="options.host" size="15">
             </div>
+            <div class="control">
+              <input class="input is-small" type="text" placeholder="Port" v-model="options.port" size="5">
+            </div>
             <p class="control">
               <button v-if="status === 'OPEN'" class="button is-small is-success">Connected</button>
               <button v-else-if="status === 'CONNECTING'" class="button is-small is-warning">Connecting...</button>
               <button v-else class="button is-small is-danger">Closed</button>
             </p>
           </div>
-        </div>
-        <div class="navbar-item">
-
         </div>
       </div>
     </div>
